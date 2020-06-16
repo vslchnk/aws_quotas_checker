@@ -336,7 +336,7 @@ func getDedicatedHostsUsage(client *ec2.EC2, family string) (*int, error) {
 	}
 
 	for _, host := range hosts {
-		if (host.HostProperties.InstanceType != nil && strings.Contains(*host.HostProperties.InstanceType, family+".")) || (host.HostProperties.InstanceType != nil && *host.HostProperties.InstanceType == family) {
+		if (host.HostProperties.InstanceType != nil && strings.Contains(*host.HostProperties.InstanceType, family+".")) || (host.HostProperties.InstanceFamily != nil && *host.HostProperties.InstanceFamily == family) {
 			count++
 		}
 	}
