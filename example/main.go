@@ -1,8 +1,9 @@
 package main
 
 import (
-	"checker/runner"
 	"fmt"
+
+	"github.com/vslchnk/aws_quotas_checker/runner"
 )
 
 func main() {
