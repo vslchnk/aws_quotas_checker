@@ -1,9 +1,10 @@
 package quotas
 
 import (
-	"checker/utils"
 	"fmt"
 	"strings"
+
+	"github.com/vslchnk/aws_quotas_checker/utils"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"

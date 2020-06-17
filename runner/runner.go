@@ -1,18 +1,19 @@
 package runner
 
 import (
-	"checker/cloudwatch"
-	"checker/quotas"
-	"checker/services/autoscaling"
-	"checker/services/cloudformation"
-	"checker/services/ec2"
-	"checker/services/efs"
-	"checker/services/elasticbeanstalk"
-	"checker/services/elb"
-	"checker/services/s3"
-	"checker/services/vpc"
-	"checker/utils"
 	"fmt"
+
+	"github.com/vslchnk/aws_quotas_checker/cloudwatch"
+	"github.com/vslchnk/aws_quotas_checker/quotas"
+	"github.com/vslchnk/aws_quotas_checker/services/autoscaling"
+	"github.com/vslchnk/aws_quotas_checker/services/cloudformation"
+	"github.com/vslchnk/aws_quotas_checker/services/ec2"
+	"github.com/vslchnk/aws_quotas_checker/services/efs"
+	"github.com/vslchnk/aws_quotas_checker/services/elasticbeanstalk"
+	"github.com/vslchnk/aws_quotas_checker/services/elb"
+	"github.com/vslchnk/aws_quotas_checker/services/s3"
+	"github.com/vslchnk/aws_quotas_checker/services/vpc"
+	"github.com/vslchnk/aws_quotas_checker/utils"
 )
 
 type ServiceQuota struct {
